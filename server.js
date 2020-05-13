@@ -10,7 +10,7 @@ const url = 'mongodb://localhost:27017/';
 app.use(function(req,res,next){
     next();
 });
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 let fullName;
 let emailId;
 let mobileNo;
@@ -21,7 +21,8 @@ app.post('/index',function(req,res){
     mobileNo = req.body.mobile;
     message = req.body.comment;
     // console.log("FullName:"+fullName+"\nEmail:"+emailId+"\nMobileNo:"+mobileNo+"\nFeedback:"+message);
-    res.send(req.body);
+    res.sendStatus(200);
+    //res.send(req.body);
     var Data = {FullName:fullName,EmailId:emailId,MobileNumber:mobileNo,Message:message};
     console.log(Data);
     MongoClient.connect(url, function(err, db) {
@@ -65,6 +66,8 @@ app.post('/index',function(req,res){
       });
 
 });
-console.log("Server listen at port 5000");
-app.listen(port);
+
+app.listen(port,function(){
+    console.log("Server listen at port 8000");
+});
 
