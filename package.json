@@ -8,7 +8,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "node server.js"
   },
   "author": "sidhik",
   "license": "ISC",
