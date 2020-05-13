@@ -1,15 +1,11 @@
 const cool = require('cool-ascii-faces')
-const fs = require('fs');
 var express = require('express');
 var bodyParser = require('body-parser')
 var nodemailer = require('nodemailer');
 const MongoClient = require('mongodb').MongoClient;
 var app = express();
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8000;
 const url = 'mongodb://localhost:27017/';
-
-var customerNo = 1;
-
 
 app.use(function(req,res,next){
     next();
