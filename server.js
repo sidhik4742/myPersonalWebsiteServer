@@ -69,5 +69,5 @@ app.post('/index',function(req,res){
 
 });
 console.log("Server listen at port 8000");
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
 
