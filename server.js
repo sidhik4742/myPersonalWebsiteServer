@@ -5,6 +5,7 @@ var bodyParser = require('body-parser')
 var nodemailer = require('nodemailer');
 const MongoClient = require('mongodb').MongoClient;
 var app = express();
+var port = process.env.PORT || 8000;
 const url = 'mongodb://localhost:27017/';
 
 var customerNo = 1;
@@ -69,5 +70,5 @@ app.post('/index',function(req,res){
 
 });
 console.log("Server listen at port 8000");
-app.listen(process.env.PORT || 8000);
+app.listen(port);
 
