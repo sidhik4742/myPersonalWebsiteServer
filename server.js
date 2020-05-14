@@ -1,11 +1,12 @@
-const cool = require('cool-ascii-faces')
+const dotenv = require('dotenv').config();
+const cool = require('cool-ascii-faces');
 var express = require('express');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 const MongoClient = require('mongodb').MongoClient;
 var app = express();
 var port = process.env.PORT || 8000;
-const url = 'mongodb://localhost:27017/';
+const url = process.env.MONGODB_URI ||'mongodb://localhost:27017/';
 
 app.use (express.static('public'));
 
