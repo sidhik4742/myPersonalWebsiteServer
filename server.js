@@ -7,6 +7,8 @@ var app = express();
 var port = process.env.PORT || 8000;
 const url = 'mongodb://localhost:27017/';
 
+app.use (express.static('public'));
+
 app.use(function(req,res,next){
     next();
 });
@@ -21,8 +23,9 @@ app.post('/index',function(req,res){
     mobileNo = req.body.mobile;
     message = req.body.comment;
     // console.log("FullName:"+fullName+"\nEmail:"+emailId+"\nMobileNo:"+mobileNo+"\nFeedback:"+message);
-    res.sendStatus(200);
-    //res.send(req.body);
+    // res.sendStatus(200);
+    res.send(req.body);
+    res.end();
     var Data = {FullName:fullName,EmailId:emailId,MobileNumber:mobileNo,Message:message};
     console.log(Data);
     MongoClient.connect(url, function(err, db) {

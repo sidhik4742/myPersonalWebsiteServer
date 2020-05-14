@@ -1,0 +1,95 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.main-body{
+    width: 100%;
+    background-image: url(img/pexels-photo-303383.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 875px) {
+    .main-body {
+        background-size: cover;
+       /* background-image: url(img/photo-1541991078342-884c7bcb1ad6.jpeg);
+       background-repeat:no-repeat; */
+       
+    }
+  }
+
+ .navbar-toggler .navbar-toggler-icon {
+    background-color: white;
+}
+.photo{
+    image-resolution: 30dpi;
+}
+.margin{
+    margin-top: 7rem;
+    margin-left: 3rem;
+
+}
+.text{
+    font-size: 2rem;
+}
+.name{
+    font-size: 3rem;
+}
+.intro-para{
+    padding-bottom: 2rem;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+.Fullscreen{
+    padding-bottom: 15rem;
+}
+.section2{
+    background-color: whitesmoke;
+}
+.section3{
+    background-color: turquoise;
+}
+.section4{
+    background-image: linear-gradient(to left, #434343, #000000);
+}
+.auto-alignment{
+    width: 100%;
+    height: auto;
+}
+.date{
+    background-color: turquoise;
+}
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+    .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.textarea{
+    border-radius: 10px;
+}
+.button{
+    margin-left: 25%;
+    width: 30%;
+    box-sizing: content-box;
+    border-radius: 35px;
+    color: black;
+    border-color: black;
+}
+.form-background{
+    background-color: turquoise;
+    border-color: black;
+}
+.footer{
+    background-image: linear-gradient(to left, #434343, #000000);
+}
+.social-media-icon{
+    margin: 0px auto;
+
+}

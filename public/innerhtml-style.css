@@ -1,0 +1,26 @@
+html{
+    scroll-behavior: smooth;
+}
+.main-body{
+    max-width: 100%;
+    background-image:linear-gradient(to left, #434343, #000000);;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar-toggler .navbar-toggler-icon {
+    background-color: white;
+}
+.content{
+    background-image: url(img/photo-1471445281684-fdf28e036aa8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pdf-alignment{
+    margin-left: 20rem;
+}
+.footer{
+    background-image: linear-gradient(to left, #434343, #000000);
+}
+.social-media-icon{
+    margin: 0px auto;
+}
