@@ -29,19 +29,27 @@ app.post('/index',function(req,res){
     res.end();
     var Data = {FullName:fullName,EmailId:emailId,MobileNumber:mobileNo,Message:message};
     console.log(Data);
-    MongoClient.connect(url, function(err, db) {
-        if (err){
-            console.log("Error: "+err);
-        }
-        var dbName = db.db("customerFeedback");
-        dbName.collection("customers").insertOne(Data, function(err, res) {
-            if (err){
-                console.log("Error: "+err);
-            }
-            console.log("1 document inserted");
-            db.close();
-        });
-    });
+   
+   
+   
+    //////////////////////////////this is the database code////////////////////////////////////////
+    // MongoClient.connect(url, function(err, db) {
+    //     if (err){
+    //         console.log("Error: "+err);
+    //     }
+    //     var dbName = db.db("customerFeedback");
+    //     dbName.collection("customers").insertOne(Data, function(err, res) {
+    //         if (err){
+    //             console.log("Error: "+err);
+    //         }
+    //         console.log("1 document inserted");
+    //         db.close();
+    //     });
+    // });
+    //////////////////////////////this is the database code////////////////////////////////////////
+    
+    
+    
     var transporter = nodemailer.createTransport({
         //  service: 'gmail',
         host: 'smtp.gmail.com',
@@ -53,8 +61,7 @@ app.post('/index',function(req,res){
           pass: 'letmein@64742'
         }
       });
-      
-      var mailOptions = {
+    var mailOptions = {
         from: 'sidhik64742@gmail.com',
         to: emailId,
         subject: 'Thanks for your Feedback',
