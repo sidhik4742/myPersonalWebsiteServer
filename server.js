@@ -57,12 +57,12 @@ app.post('/index',function(req,res){
         secure: false,
         requireTLS: true,
         auth: {
-          user: 'sidhik64742@gmail.com',
-          pass: 'letmein@64742'
+          user: 'sidhh1994@gmail.com',
+          pass: 'qwerty@123456'
         }
       });
     var mailOptions = {
-        from: 'sidhik64742@gmail.com',
+        from: 'sidhh1994@gmail.com',
         to: emailId,
         subject: 'Thanks for your Feedback',
         html:'<h2>S@R</h2><h5>Thanks for visiting my website and your valuable feedback! <a href=https://sidhik4742.github.io/MyPersonalWebsite/> You must click this link to back home page.</a></h5>'
