@@ -10,6 +10,7 @@ html{
 }
 @media only screen and (max-width: 875px) {
     .main-body {
+        background-image: linear-gradient(to left, #434343, #000000);
         background-size: cover;
        /* background-image: url(img/photo-1541991078342-884c7bcb1ad6.jpeg);
        background-repeat:no-repeat; */
@@ -18,7 +19,7 @@ html{
   }
 
  .navbar-toggler .navbar-toggler-icon {
-    background-color: white;
+    background-color:gold;
 }
 .photo{
     image-resolution: 30dpi;
