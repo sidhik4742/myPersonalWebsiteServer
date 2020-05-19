@@ -24,8 +24,8 @@ app.post('/index',function(req,res){
     mobileNo = req.body.mobile;
     message = req.body.comment;
     // console.log("FullName:"+fullName+"\nEmail:"+emailId+"\nMobileNo:"+mobileNo+"\nFeedback:"+message);
-    // res.sendStatus(200);
-    res.send(req.body);
+    // res.sendStatus(200).send(req.body);
+    res.send('<h5>Thanks for visiting my website and your valuable feedback! <a href=https://sidhik4742.github.io/MyPersonalWebsite/> You must click this link to back home page.</a></h5>');
     res.end();
     var Data = {FullName:fullName,EmailId:emailId,MobileNumber:mobileNo,Message:message};
     console.log(Data);

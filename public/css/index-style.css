@@ -4,7 +4,7 @@ html{
 
 .main-body{
     width: 100%;
-    background-image: url(img/pexels-photo-303383.jpeg);
+    background-image: url(../img/pexels-photo-303383.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -86,10 +86,75 @@ html{
     background-color: turquoise;
     border-color: black;
 }
-.footer{
+.footer-bg{
     background-image: linear-gradient(to left, #434343, #000000);
 }
-.social-media-icon{
-    margin: 0px auto;
+.social_media_w3layouts {
+    margin: 0 0 0 0;
+}
 
+.social_media_w3layouts ul li {
+    margin: 0 0.5em;
+    font-size: 1.2em;
+}
+
+.agileinfo_share {
+    margin-right: 1em !important;
+    color: #fff;
+}
+
+ul.social-icons li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.social-icons li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    line-height: 34px;
+    background: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+}
+
+ul.social-icons li a:hover {
+      color: #ffc107;
+}
+p.copy-right-w3ls {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+p.copy-right-w3ls a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+p.copy-right-w3ls a:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fbb034;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #fbb034;
+    text-decoration: line-through;
 }

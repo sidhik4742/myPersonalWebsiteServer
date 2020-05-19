@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyWebSite</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="index-style.css" type="text/css">
+    <link rel="stylesheet" href="css/index-style.css" type="text/css">
     <link rel="icon" href="img/SIDHIK Cover photo.jpg" type="image/icon type">
 </head>
 <body>
   <div class="main-body">
     <header >
-        <div class="row text-white container-fluid">
+        <div class="row text-white container-fluid" style="margin-right: 15px;">
             <div class="col-md-6 col-6 p-3 pl-5">
                 <h2> <a  class="text-white font-weight-bold" id="home" href="index.html" style="text-decoration: none;">S@R</a></h2>
             </div>
@@ -24,33 +24,32 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                          <a class="nav-link text-white font-weight-bold" href="index.html">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white font-weight-bold" href="#aboutme">About</a>
+                          <a class="nav-link" href="#aboutme">About</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white font-weight-bold" href="#services">Services</a>
+                          <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Downloads
                           </a>
                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#projects">Projects</a>
                             <a class="dropdown-item" href="video.html">Projects-video</a>
                             <a class="dropdown-item" href="#experiences">Experiences</a>
-                            <a class="dropdown-item" href="travel.html">Travel</a>
+                            <a class="dropdown-item" href="travel.html">Travel&Photography</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#download">My CV</a>
-                            <a class="dropdown-item" href="SignUp.html">Feedback</a>
                           </div>
                           <li class="nav-item">
-                            <a class="nav-link text-white font-weight-bold" href="SignUp.html">Feedback</a>
+                            <a class="nav-link" href="SignUp.html">Feedback</a>
                           </li>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white font-weight-bold" href="#contact">Contact Me</a>
+                          <a class="nav-link" href="#contact">Contact Me</a>
                         </li>
                       </ul>
                     </div>
@@ -196,7 +195,7 @@
         <div class="col-md-4 col-12 text-center pb-2">
           <button type="button" class="btn btn-lg btn-dark" data-toggle="popover" data-trigger="focus"  title="Smart Home (DIY)" 
                   data-content="This is a DIY project, using an ESP 32 WiFi enabled micro controller chip to control home appliances like fan, 
-                                light etc.it can control with physical switch, mobile app, and google assistant.<br><a href='Video.html' title='Video Link'>Video</a>">Smart Home
+                                light etc.it can control with physical switch, mobile app, and google assistant.<br><a href='video.html' title='Video Link'>Video</a>">Smart Home
           </button>
         </div>
         <div class="col-md-4 col-12 text-center pb-2">
@@ -207,7 +206,7 @@
         
         <div class="col-md-4 col-12 text-center pb-2">
           <button type="button" class="btn btn-lg btn-dark" data-toggle="popover" data-trigger="focus"  title="internship project(11/2016 – 03/2017)" 
-                  data-content="Used to control all electronics devices they are worked in RF region.<br><a href='' title='Video Link'>Video</a>">Universal RF Remote
+                  data-content="Used to control all electronics devices they are worked in RF region.<br><a href='' title='video Link'>Video</a>">Universal RF Remote
           </button>
         </div>
       </div>
@@ -282,7 +281,7 @@
           <div class="col-md-6 col-12">
               <h4>Get in touch</h4>
               <br>
-              <form action="/index" method="POST" id="Myform" enctype="application/x-www-form-urlencoded"> 
+              <form action="mailto:sidhik64742@gmail.com" method="POST" enctype="multipart/form-data" target="_top"> 
                 <div class="row pl-3">
                   <div class=" col-1">
                     <span class="fa mr-2 fa-user" aria-hidden="true"></span>
@@ -296,7 +295,7 @@
                     <span class="fa fa-envelope-open" aria-hidden="true"></span>
                   </div>
                   <div class="col-11 pr-5">
-                    <input type="text" class="form-control w-75 form-background" name="email" id="email" placeholder="Email" required> 
+                    <input type="email" class="form-control w-75 form-background" name="email" id="email" placeholder="Email" required> 
                   </div>
                   <br>
                   <br>
@@ -304,7 +303,7 @@
                     <span class="fa fa-phone" aria-hidden="true"></span>
                   </div>
                   <div class="col-11 pr-5">
-                    <input type="text" class="form-control w-75 form-background" name="mobile" id="phone" placeholder="phone" required>
+                    <input type="mobile" class="form-control w-75 form-background" name="mobile" id="phone" placeholder="phone" required>
                   </div>
                   <br>
                   <br>
@@ -312,10 +311,10 @@
                     <span class="fa mr-2 fa-edit" aria-hidden="true"></span>
                   </div>
                   <div class="col-11 pr-5">
-                    <textarea class="form-control w-75 textarea form-background" rows="5" cols="40" name="comment" id="message" form="Myform" >Enter message here...</textarea>
+                    <textarea class="form-control w-75 textarea form-background" rows="5" cols="40" name="comment" id="message" form="Myform" placeholder="Enter feedback here..." ></textarea>
                   </div>
                   <div class="col-12 p-3">
-                    <input class="btn btn-primary button" id="formButton" type="button" value="Submit">
+                    <input class="btn btn-primary button" id="" type="submit" value="Submit">
                   </div>
 
                 </div>
@@ -323,26 +322,18 @@
             </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="row">
-          <div class="col-12 pt-5">
-            <table class="social-media-icon">
-              <tbody>
-                <tr>
-                  <td><li><a href="https://www.linkedin.com/in/sidhik-ar-7b2809131/"target="_blank"><span><i class="fab fa-linkedin fa-1x"></i></span></a></li></td>
-                  <td><li><a href="https://www.facebook.com/sidhik.sidhi1"target="_blank"><span><i class="fab fa-facebook fa-1x"></i></span></a></li></td>
-                  <td><li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span><i class="fab fa-google-plus-g fa-1x"></i></span></a></li></td>
-                  <td><li><a href=""target="_blank"><span><i class="fab fa-whatsapp fa-1x"></i></span></a></li></td>
-                  <td><li><a href="https://www.instagram.com/sidhhhhhhhhhh/"target="_blank"><span><i class="fab fa-instagram fa-1x"></i></span></a></li></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-12 text-center text-light">
-            <p>© 2018 Activity. All Rights Reserved | Design by <a href="#" class="text-white"style="text-decoration: none;"> S@R Design</a></p>
+      <footer class=" footer-bg pt-5 pb-5">
+        <div class="social_media_w3layouts text-center">
+            <ul class="social-icons  justify-content-center mt-md-5 mt-3">
+                <li class="mr-1"><a href="https://www.facebook.com/sidhik.sidhi1" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+                <li class="mx-1"><a href="https://www.instagram.com/sidhhhhhhhhhh/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                <li class="mx-1"><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="fab fa-google-plus-g"></span></a></li>
+                <li class="mx-1"><a href="https://www.linkedin.com/in/sidhik-ar-7b2809131/" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+                <li class="mx-1"><a href="https://stackoverflow.com/users/13431715/sidhik" target="_blank"><span class="fab fa-stack-overflow"></span></a></li>
+            </ul>
+            <p class="copy-right-w3ls my-3">© 2020 Sidhik's Personal-Website. All rights reserved | Design by <a href="index.html">S@R Design</a></p>
             <a href="#home"><span class="fa fa-angle-up fa-3x" aria-hidden="true"></span></a>
           </div>
-        </div>
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

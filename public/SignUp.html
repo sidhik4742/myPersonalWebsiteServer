@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="//fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
 	    rel="stylesheet">
-    <link rel="stylesheet" href="Signup-style.css" type="text/css">
+    <link rel="stylesheet" href="css/Signup-style.css" type="text/css">
     <link rel="icon" href="img/SIDHIK Cover photo.jpg" type="image/icon type">
 </head>
 <body>
@@ -17,13 +17,13 @@
                 <h2><a class="text-white font-weight-bold" id="home" href="index.html" style="text-decoration: none;" >S@R</a></h2>
             </div>
             <div class="col-md-6 col-6 p-3">
-                <nav class="navbar navbar-expand-lg navbar-light"></nav>
-                      <ul class="navbar-nav pr-5">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                      <ul class="navbar-nav pr-5 ml-auto">
                         <li class="nav-item active">
-                          <a class="text-white nav-link font-weight-bold" href="index.html" style="margin-right: auto;" >Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                       </ul>
-                    </nav>
+                </nav>
             </div>
         </div>
     </header>
@@ -39,47 +39,39 @@
         <!-- //title -->
         <!-- content -->
         <div class="sub-main-w3">
-            <form validate="true" action="index.html" method="GET">
+            <form action="/index" method="POST" id="Myform" enctype="application/x-www-form-urlencoded"> 
                 <div class="form-group">
                     <label for="exampleInputText">Name</label>
-                    <input type="text" class="form-control" name="name" id="exampleInputText" placeholder="Enter Name" required>
+                    <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter FullName" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" name="name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleMobile1">Mobile Number</label>
-                    <input type="mobile" class="form-control" name="name" id="exampleMobile1" placeholder="Mobile number" required>
+                    <input type="mobile" class="form-control" name="mobile" id="phone" placeholder="Mobile number" required>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control w-100 textarea form-background textarea" rows="5" cols="45" name="comment"  >Enter message here...</textarea>
+                    <textarea class="form-control w-100 textarea form-background textarea" rows="5" cols="45" name="comment" placeholder="Enter feedback here..." ></textarea>
                   </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" id="formButton" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </section>
-    <footer class="footer">
-        <div class="row">
-          <div class="col-12 pt-5">
-            <table class="social-media-icon">
-              <tbody>
-                <tr>
-                  <td><li><a href="https://www.linkedin.com/in/sidhik-ar-7b2809131/"target="_blank"><span><i class="fab fa-linkedin fa-1x"></i></span></a></li></td>
-                  <td><li><a href="https://www.facebook.com/sidhik.sidhi1"target="_blank"><span><i class="fab fa-facebook fa-1x"></i></span></a></li></td>
-                  <td><li><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span><i class="fab fa-google-plus-g fa-1x"></i></span></a></li></td>
-                  <td><li><a href=""target="_blank"><span><i class="fab fa-whatsapp fa-1x"></i></span></a></li></td>
-                  <td><li><a href="https://www.instagram.com/sidhhhhhhhhhh/"target="_blank"><span><i class="fab fa-instagram fa-1x"></i></span></a></li></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-12 text-center text-white" style="text-decoration: none;">
-            <p>© 2018 Activity. All Rights Reserved | Design by <a href="#" class="text-white" style="text-decoration: none;"> S@R Design</a></p>
+    <footer class="mt-lg-5 mt-3">
+        <div class="social_media_w3layouts text-center">
+            <ul class="social-icons  justify-content-center mt-md-5 mt-3">
+                <li class="mr-1"><a href="https://www.facebook.com/sidhik.sidhi1" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+                <li class="mx-1"><a href="https://www.instagram.com/sidhhhhhhhhhh/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                <li class="mx-1"><a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><span class="fab fa-google-plus-g"></span></a></li>
+                <li class="mx-1"><a href="https://www.linkedin.com/in/sidhik-ar-7b2809131/" target="_blank"><span class="fab fa-linkedin-in"></span></a></li>
+                <li class="mx-1"><a href="https://stackoverflow.com/users/13431715/sidhik" target="_blank"><span class="fab fa-stack-overflow"></span></a></li>
+            </ul>
+            <p class="copy-right-w3ls my-3">© 2020 Sidhik's Personal-Website. All rights reserved | Design by <a href="index.html">S@R Design</a></p>
             <a href="#home"><span class="fa fa-angle-up fa-3x" aria-hidden="true"></span></a>
-          </div>
         </div>
-      </footer>
+ </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  

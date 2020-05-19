@@ -26,7 +26,6 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
 acronym,
 address,
@@ -81,7 +80,6 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 output,
 ruby,
 section,
@@ -107,13 +105,11 @@ footer,
 header,
 hgroup,
 menu,
-nav,
 section {
     display: block;
 }
 
-ol,
-ul {
+ol {
     list-style: none;
     margin: 0px;
     padding: 0px;
@@ -141,6 +137,7 @@ table {
 
 a {
     text-decoration: none;
+    margin-left: auto;
 }
 
 .txt-rt {
@@ -203,15 +200,8 @@ a {
 
 /* vertical align top */
 
-nav.vertical ul li {
-    display: block;
-}
 
 /* vertical menu */
-
-nav.horizontal ul li {
-    display: inline-block;
-}
 
 /* horizontal menu */
 
@@ -222,15 +212,13 @@ img {
 /*end reset*/
 
 body {
-    background: url(img/1.jpg) no-repeat;
+    background: url(../img/signup-bg.jpg) no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
     background-position: center;
-    font-size: 100%;
-    font-family: 'Cuprum', sans-serif;
     min-height: 100vh;
 }
 
@@ -444,9 +432,74 @@ div.error-field {
     letter-spacing: 1px;
     margin-top: 5px;
 }
-.social-media-icon{
-    margin: 0px auto;
+.social_media_w3layouts {
+    margin: 2em 0 2em 0;
+}
 
+.social_media_w3layouts ul li {
+    margin: 0 0.5em;
+    font-size: 1.2em;
+}
+
+.agileinfo_share {
+    margin-right: 1em !important;
+    color: #fff;
+}
+
+ul.social-icons li {
+    list-style: none;
+    display: inline-block;
+}
+
+ul.social-icons li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    line-height: 34px;
+    background: transparent;
+    border: 2px solid #fff;
+    text-align: center;
+}
+
+ul.social-icons li a:hover {
+      color: #ffc107;
+}
+p.copy-right-w3ls {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+p.copy-right-w3ls a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+p.copy-right-w3ls a:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fbb034;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #fbb034;
+    text-decoration: line-through;
 }
 
 /* //validate style */
