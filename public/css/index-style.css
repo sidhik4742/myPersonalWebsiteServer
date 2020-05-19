@@ -28,6 +28,17 @@ html{
     margin-left: 3rem;
 
 }
+
+.dropdownstyle{
+    position: relative;
+    background-image: linear-gradient(to left, #434343, #000000);
+    
+
+}
+.dropdown-item{
+    color: #fbb034;
+}
+
 .text{
     font-size: 2rem;
 }
