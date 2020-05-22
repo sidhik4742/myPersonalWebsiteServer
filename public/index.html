@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyWebSite</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/index-style.css" type="text/css">
     <link rel="icon" href="img/SIDHIK Cover photo.jpg" type="image/icon type">
 </head>
@@ -12,10 +13,10 @@
   <div class="main-body">
     <header >
         <div class="row text-white container-fluid">
-            <div class="col-md-6 col-6 p-3 pl-5">
+            <div class="col-md-6 col-6 p-3 pl-3">
                 <h2> <a  class="text-white font-weight-bold" id="home" href="index.html" style="text-decoration: none;">S@R</a></h2>
             </div>
-            <div class="col-md-6 col-6 p-3 ">
+            <div class="col-md-6 col-6 p-3">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <button class="navbar-toggler navbar-toggler-right ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation ">
                       <span class="navbar-toggler-icon"></span>
@@ -59,14 +60,18 @@
             </div>
         </div>
     </header>
-    <Section class="text-light font-weight-bold Fullscreen">
+    <Section class="text-light font-weight-bold">
       <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 col-12 margin">
                 <a class="text"> My name is</a>
                 <br>
-                <a class="name">Sidhik A Rahman</a>
-            </div>
+                <div>
+                  <a class="name">Sidhik A Rahman
+                  <!--  <span class="tooltipimg"><img src="img/Account-img.jpg" alt="Paris"></span> -->
+                  </a>
+                </div>    
+              </div>
         </div>
         <div class="row container-fluid text-justify">
             <div class="col-md-6 col-12 intro-para text-left ">
@@ -74,7 +79,7 @@
             </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-12 text-center pb-3">
+          <div class="col-md-6 col-12 text-center pb-5">
             <a class="btn btn-light font-weight-bold" href="#" role="button">Read More</a>
             <a class="btn btn-light font-weight-bold" href="#contact" role="button">Contact Me</a>
           </div>
@@ -98,7 +103,7 @@
             <a class="btn btn-info" href="pdf/Resume-SIDHIK.pdf"target="_blank" role="button" id="download">Download CV</a>
           </div>
           <div class="col-md-4 col-12">
-            <img class="img-fluid" src="img/about.jpg" alt="">
+            <img class="img-fluid section2-img " src="img/about.jpg" alt="">
           </div>
           <div class="col-md-4 col-12 pt-3 pl-5">
             <h5 class="font-weight-bold">Designing & Developing 95%</h5>
@@ -176,7 +181,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 col-12 pl-2 pb-2">
+        <div class="col-md-4 col-12 pl-2 pb-3">
           <div class="card mx-auto " style="width: 18rem; background-image: linear-gradient(to left, #434343, #000000);">
             <img class="card-img-top img-fluid " src="img/elctrical circuit.png" alt="Card image cap">
             <div class="card-body">
@@ -236,7 +241,7 @@
           <div class=" col-md-4 col-12 text-center pb-2">
               <button type="button" class="btn btn-lg btn-dark" data-toggle="popover" data-trigger="focus"  title="Smart clock (DIY)" 
                       data-content="This is a DIY project. an ESP 12E (micro controller plus wifi chip) and a RTC module used to display the time and date in lcd screen. 
-                      also can connected mobile phone using wifi to set alarm, remainder notes etc.<br><a href='Video.html' title='Video Link'>Video</a>">Smart clock
+                      also can connected mobile phone using wifi to set alarm, remainder notes etc.<br><a href='video.html' title='Video Link'>Video</a>">Smart clock
               </button>
           </div>
         </div>
@@ -256,7 +261,7 @@
                 <span class="fa fa-map-marker" aria-hidden="true"></span>
               </div>
               <div class="col-11">
-                <h5>Anjikkattu(H),Sreemoolanagaram P.O <br>
+                <h5>Anjikkattu(H),<br>Sreemoolanagaram P.O <br>
                     Aluva-683580
                 </h5>
               </div>
@@ -313,7 +318,7 @@
                     <span class="fa mr-2 fa-edit" aria-hidden="true"></span>
                   </div>
                   <div class="col-11 pr-5">
-                    <textarea class="form-control w-75 textarea form-background" rows="5" cols="40" name="comment" id="message" form="Myform" placeholder="Enter feedback here..." ></textarea>
+                    <textarea class="form-control w-75 textarea form-background" rows="5" cols="40" name="comment" id="message" form="Myform" placeholder="How can i help you...?" ></textarea>
                   </div>
                   <div class="col-12 p-3">
                     <input class="btn btn-primary button" id="" type="submit" value="Submit">

@@ -1,6 +1,11 @@
 html{
     scroll-behavior: smooth;
 }
+
+.row{
+    margin: 0;
+}
+
 .main-body{
     max-width: 100%;
     background-image:linear-gradient(to left, #434343, #000000);;

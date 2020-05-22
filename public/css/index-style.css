@@ -1,17 +1,26 @@
-html{
+body,html{
     scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+}
+.row{
+    margin: 0;
 }
 
 .main-body{
-    width: 100%;
     background-image: url(../img/pexels-photo-303383.jpeg);
-    background-size: contain;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 @media only screen and (max-width: 875px) {
     .main-body {
         background-image: linear-gradient(to left, #434343, #000000);
         background-size: cover;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
        /* background-image: url(img/photo-1541991078342-884c7bcb1ad6.jpeg);
        background-repeat:no-repeat; */
        
@@ -21,12 +30,8 @@ html{
  .navbar-toggler .navbar-toggler-icon {
     background-color:gold;
 }
-.photo{
-    image-resolution: 30dpi;
-}
 .margin{
     margin-top: 7rem;
-    margin-left: 3rem;
 
 }
 
@@ -45,10 +50,39 @@ html{
 }
 .name{
     font-size: 3rem;
+    text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px gold;
 }
+/*
+
+.tooltipimg{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;    
+}
+.name:hover .tooltipimg{
+        visibility: visible;
+}
+
+@media only screen and (min-width: 1000px) {
+    .tooltipimg{
+        visibility: hidden;
+    }
+}
+*/
+
+
+
+
 .intro-para{
+    padding-top: 2rem;
     padding-bottom: 2rem;
-    margin-left: 2rem;
     font-weight: bold;
 }
 .Fullscreen{
@@ -57,12 +91,21 @@ html{
 .section2{
     background-color: whitesmoke;
 }
+.section2-img{
+    border-radius: 50px;
+}
+
 .section3{
     background-color: turquoise;
 }
 .section4{
     background-image: linear-gradient(to left, #434343, #000000);
 }
+
+.card-animation{
+    animation-duration: 3s;
+}
+
 .auto-alignment{
     width: 100%;
     height: auto;

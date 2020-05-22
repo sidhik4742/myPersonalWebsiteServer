@@ -209,10 +209,13 @@ img {
     max-width: 100%;
 }
 
+.row{
+    margin: 0;
+}
 /*end reset*/
 
 body {
-    background: url(../img/signup-bg.jpg) no-repeat;
+    background: url(../img/feedback-bg.jpg) no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -220,6 +223,14 @@ body {
     -ms-background-size: cover;
     background-position: center;
     min-height: 100vh;
+}
+
+@media(max-width: 500px) {
+    body{
+        background-image: url(../img/rsz_feedback-bg-mobile.jpg);
+        background-size: cover;
+
+    }
 }
 
 /*-- title --*/
@@ -474,7 +485,7 @@ p.copy-right-w3ls {
 }
 
 p.copy-right-w3ls a {
-    color: #ffc107;
+    color: black;
     text-decoration: none;
 }
 
@@ -493,7 +504,7 @@ p.copy-right-w3ls a:hover {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #fbb034;
+    color: black;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
