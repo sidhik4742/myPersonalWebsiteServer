@@ -1,9 +1,12 @@
 const dotenv = require('dotenv').config();
 const cool = require('cool-ascii-faces');
+const fs = require('fs');
 var express = require('express');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 const MongoClient = require('mongodb').MongoClient;
+
+// console.log(dateTime);
 var app = express();
 var port = process.env.PORT || 8000;
 const url = process.env.MONGODB_URI ||'mongodb://localhost:27017/';
@@ -25,11 +28,20 @@ app.post('/index',function(req,res){
     message = req.body.comment;
     // console.log("FullName:"+fullName+"\nEmail:"+emailId+"\nMobileNo:"+mobileNo+"\nFeedback:"+message);
     // res.sendStatus(200).send(req.body);
-    res.send('<h5>Thanks for visiting my website and your valuable feedback! <a href=https://personal-websiteserver.herokuapp.com/> You must click this link to back home page.</a></h5>');
+    res.send('<h3>Thanks for visiting my website and your valuable feedback! <a href=https://personal-websiteserver.herokuapp.com/> You must click this link to back home page.</a></h3>');
     res.end();
     var Data = {FullName:fullName,EmailId:emailId,MobileNumber:mobileNo,Message:message};
     console.log(Data);
-   
+    const dateTime = new Date().toLocaleString('en-US', {
+      timeZone: 'Asia/Calcutta'
+    });
+    fs.appendFile('customer-info/customer-info.txt',dateTime + "\n" + JSON.stringify(Data) + "\n",function (err){
+      if(err){
+        console.log(err);
+      }else{
+        console.log("file writing success");
+      }
+    });
    
    
     //////////////////////////////this is the database code////////////////////////////////////////
